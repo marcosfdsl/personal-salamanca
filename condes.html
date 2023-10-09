@@ -8,6 +8,20 @@
     <title>Familia Salamanca</title>
     <script src="https://kit.fontawesome.com/bf7e2ba98b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector(".fa-solid.fa-bars");
+            var menu = document.getElementById("menu");
+
+            button.addEventListener("click", function () {
+                if (menu.classList.contains("invisible")) {
+                    menu.classList.remove("invisible");
+                } else {
+                    menu.classList.add("invisible");
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -15,15 +29,10 @@
         <div class="lg:grid lg:grid-cols-8 xl:grid-cols-6 flex-1">
             <div class="bg-black relative group lg:col-span-2 xl:col-span-1">
                 <div class="flex items-center cursor-pointer">
-                    <h3 class="text-gray-300 font-bold pt-2 pb-2 text-sm md:text-xl lg:pt-5 lg:text-sm"><i
-                        class="fa-solid fa-bars p-3"></i>FAMILIA SALAMANCA</h3>
-                    <h3 class="text-gray-300 pt-2 pb-2 text-sm lg:hidden">
-                        &nbsp(Mantén pulsado)</h3>
-                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
+                    <h3 class="text-gray-300 font-bold pt-2 pb-2 text-sm md:text-xl lg:pt-5 lg:text-sm"><button
+                            class="fa-solid fa-bars p-3"></button>FAMILIA SALAMANCA</h3>
                 </div>
-                <div class="flex flex-col bg-black absolute w-full h-grow invisible group-hover:visible lg:visible">
+                <div class="flex flex-col bg-black absolute w-full h-grow invisible lg:visible">
 
                     <a href="index.html" class="text-gray-300 text-sm"><i class="fa-solid fa-house p-3"></i>Orígenes
                         Salamanca</a>
@@ -64,13 +73,15 @@
                         veintitrés años gracias a las influencias de su padre, <b>José de Salamanca y Forcallo</b> (ya
                         mencionado en <a href="primeros.html" class="underline">Los Primeros Salamanca</a>), natural de
                         Burgos, caballero de la Orden de Santiago, oidor de las Reales Chancillerías de Valladolid y
-                        Granada y miembro del Consejo de Castilla.</p>
+                        Granada y miembro del Consejo de Castilla.
+                    </p>
                     <p class="pb-2 text-gray-100 text-md">La denominación tanto del condado como del vizcondado previo
                         concedidos a la familia <b>Salamanca</b> hacían referencia a Fuente el Salce, un pago en la
                         llamada Sierra de Ubierna que se cita en antiguos documentos como límite entre las localidades
                         burgalesas de Villaverde Peñahorada y Ubierna. La presencia de miembros de la familia
                         <b>Salamanca</b> en Villaverde Peñahorada está documentada desde al menos 1621, y existen
-                        escudos en piedra que muestran las armas del linaje en diferentes casas del pueblo.</p>
+                        escudos en piedra que muestran las armas del linaje en diferentes casas del pueblo.
+                    </p>
                     <br>
                     <img src="costados.jpg" class="object-contain w-max md:h-80"
                         alt="Costados de Manuel de Salamanca e Isunza, I conde de Fuente el Salce, señor de la casa de Escoriaza en Vitoria, caballero de Calatrava.">
@@ -86,7 +97,8 @@
                         materna, los Fernández de Córdoba, tenían cargos y propiedades. En Constantina se conserva la
                         casa que fue de los sucesivos Condes de Fuente el Salce, con una colorida portada barroca al
                         estilo de las de otras casas palacio que la saga de alarifes Ruiz Florindo construyó en otras
-                        localidades cercanas, como Fuentes de Andalucía o Lora del Río.</p>
+                        localidades cercanas, como Fuentes de Andalucía o Lora del Río.
+                    </p>
                     <p class="pb-2 text-gray-100 text-md">En esta casa de Constantina, situada en el nº 10 de la actual
                         plaza de España, vivieron los condes hasta que a mediados del siglo XIX trasladaron su
                         residencia habitual a Córdoba y posteriormente a Madrid. Por ello la familia acabó deshaciéndose
@@ -347,7 +359,8 @@
                                             de <b>Manuel María de Salamanca y Quintanilla</b>, <a
                                                 href="https://es.wikipedia.org/wiki/Condado_de_Fuente_el_Salce"
                                                 target="_blank" class="underline">IV conde de Fuente el Salce</a>, y
-                                            María Manuela de Villarroel y Lugo).</p>
+                                            María Manuela de Villarroel y Lugo).
+                                        </p>
                                         <p class="pb-2 text-gray-100 text-md">Sin descendencia aparente.</p>
                                         <br>
 

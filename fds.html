@@ -8,6 +8,20 @@
     <title>Familia Salamanca</title>
     <script src="https://kit.fontawesome.com/bf7e2ba98b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var button = document.querySelector(".fa-solid.fa-bars");
+            var menu = document.getElementById("menu");
+
+            button.addEventListener("click", function () {
+                if (menu.classList.contains("invisible")) {
+                    menu.classList.remove("invisible");
+                } else {
+                    menu.classList.add("invisible");
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -15,15 +29,10 @@
         <div class="lg:grid lg:grid-cols-8 xl:grid-cols-6 flex-1">
             <div class="bg-black relative group lg:col-span-2 xl:col-span-1">
                 <div class="flex items-center cursor-pointer">
-                    <h3 class="text-gray-300 font-bold pt-2 pb-2 text-sm md:text-xl lg:pt-5 lg:text-sm"><i
-                        class="fa-solid fa-bars p-3"></i>FAMILIA SALAMANCA</h3>
-                    <h3 class="text-gray-300 pt-2 pb-2 text-sm lg:hidden">
-                        &nbsp(Mantén pulsado)</h3>
-                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
+                    <h3 class="text-gray-300 font-bold pt-2 pb-2 text-sm md:text-xl lg:pt-5 lg:text-sm"><button
+                            class="fa-solid fa-bars p-3"></button>FAMILIA SALAMANCA</h3>
                 </div>
-                <div class="flex flex-col bg-black absolute w-full h-grow invisible group-hover:visible lg:visible">
+                <div class="flex flex-col bg-black absolute w-full h-grow invisible lg:visible">
 
                     <a href="index.html" class="text-gray-300 text-sm"><i class="fa-solid fa-house p-3"></i>Orígenes
                         Salamanca</a>
