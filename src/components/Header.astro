@@ -1,0 +1,93 @@
+---
+
+---
+
+<div class="bg-black relative group lg:col-span-2 xl:col-span-1">
+	<div class="flex items-center cursor-pointer">
+		<h3
+			class="text-gray-300 font-bold pt-2 pb-2 text-sm md:text-xl lg:pt-5 lg:text-sm"
+		>
+			<button class="fa-solid fa-bars p-3"></button>FAMILIA SALAMANCA
+		</h3>
+	</div>
+	<div
+		id="menu"
+		class="flex flex-col bg-black absolute w-full h-grow invisible lg:visible"
+	>
+		<a id="index" href="/" class="text-gray-300 text-sm"
+			><i class="fa-solid fa-house p-3"></i>Orígenes Salamanca</a
+		>
+		<a id="primeros" href="/primeros" class="text-gray-300 text-sm"
+			><i class="fa-solid fa-users p-3"></i>Primeros Salamanca</a
+		>
+		<a id="condes" href="condes" class="text-gray-300 text-sm"
+			><i class="fa-sharp fa-solid fa-crown p-3"></i>Condes de Fuente el
+			Salce</a
+		>
+		<a id="fds" href="/fds" class="text-gray-300 text-sm"
+			><i class="fa-solid fa-user p-3"></i>Fernández de Salamanca</a
+		>
+		<br />
+		<hr />
+		<br />
+		<p class="text-gray-400 text-sm p-3 pb-0">Esta página pertenece a</p>
+		<p class="text-gray-400 text-sm p-3 pb-0">Marcos Fernández de</p>
+		<p class="text-gray-400 text-sm p-3 pb-0">Salamanca y López.</p>
+		<br />
+		<p class="text-gray-400 text-sm p-3 pb-0">Para ponerse en contacto</p>
+		<p class="text-gray-400 text-sm p-3 pb-0">
+			escriba al siguiente correo:
+		</p>
+		<a
+			href="mailto:marcos.fernandez@live.u-tad.com"
+			class="text-cyan-500 text-sm p-3 pb-0">Contactar por e-mail</a
+		>
+		<br />
+	</div>
+</div>
+
+<style></style>
+
+<script>
+	var button = document.querySelector(".fa-solid.fa-bars");
+	var menu = document.getElementById("menu");
+
+	button.addEventListener("click", function () {
+		if (menu.classList.contains("invisible")) {
+			menu.classList.remove("invisible");
+		} else {
+			menu.classList.add("invisible");
+		}
+	});
+
+	document.addEventListener("click", function (event) {
+		var isClickInsideButton = button.contains(event.target);
+		var isClickInsideMenu = menu.contains(event.target);
+
+		if (
+			!isClickInsideButton &&
+			!isClickInsideMenu &&
+			!menu.classList.contains("invisible")
+		) {
+			menu.classList.add("invisible");
+		}
+	});
+
+	const routes = {
+		"/": "index",
+		"/primeros": "primeros",
+		"/condes": "condes",
+		"/fds": "fds",
+	};
+
+	const currentPath = window.location.pathname;
+	const elementId = routes[currentPath];
+
+	if (elementId) {
+		const element = document.querySelector(`#${elementId}`);
+		if (element) {
+			element.classList.remove("text-gray-300");
+			element.classList.add("text-white");
+		}
+	}
+</script>

@@ -1,0 +1,27 @@
+---
+import Header from "../components/Header.astro";
+
+import logoescudo from "../img/logoescudo.png"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={logoescudo.src} />
+		<meta name="generator" content={Astro.generator} />
+		<script src="https://kit.fontawesome.com/fb109a4de6.js" crossorigin="anonymous"></script>
+		<title>Familia Salamanca</title>
+	</head>
+	<body>
+		<div class="flex flex-col h-screen">
+			<div class="lg:grid lg:grid-cols-8 xl:grid-cols-6 flex-1">
+				<Header />
+				<slot />
+			</div>
+		</div>
+	</body>
+</html>
+<style is:global></style>
