@@ -60,19 +60,6 @@
 		}
 	});
 
-	document.addEventListener("click", function (event) {
-		var isClickInsideButton = button.contains(event.target);
-		var isClickInsideMenu = menu.contains(event.target);
-
-		if (
-			!isClickInsideButton &&
-			!isClickInsideMenu &&
-			!menu.classList.contains("invisible")
-		) {
-			menu.classList.add("invisible");
-		}
-	});
-
 	const routes = {
 		"/": "index",
 		"/primeros": "primeros",
