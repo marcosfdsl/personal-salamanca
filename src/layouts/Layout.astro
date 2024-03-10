@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 
-import logoescudo from "../img/logoescudo.png"
+import logoescudo from "../img/logoescudo.png";
 ---
 
 <!doctype html>
@@ -12,7 +12,9 @@ import logoescudo from "../img/logoescudo.png"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href={logoescudo.src} />
 		<meta name="generator" content={Astro.generator} />
-		<script src="https://kit.fontawesome.com/fb109a4de6.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/fb109a4de6.js"
+			crossorigin="anonymous"></script>
 		<title>Familia Salamanca</title>
 	</head>
 	<body>
@@ -24,4 +26,14 @@ import logoescudo from "../img/logoescudo.png"
 		</div>
 	</body>
 </html>
-<style is:global></style>
+<style is:global>
+	@font-face {
+		font-family: "Kanit";
+		src: url("../fonts/kanit.woff") format("woff");
+		font-display: swap;
+	}
+
+	body {
+		font-family: "Kanit", sans-serif;
+	}
+</style>

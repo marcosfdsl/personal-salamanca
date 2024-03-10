@@ -1,20 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-import mapa from "../img/mapa.jpg"
+import mapa from "../img/mapa.jpg";
 ---
 
 <Layout>
-	<div
-		class="w-full h-grow bg-gradient-to-b from-cyan-600 to-gray-900 lg:col-span-6 xl:col-span-5"
-	>
-		<div>
-			<h1
-				class="p-6 pb-2 text-gray-100 underline underline-offset-4 text-xl"
-			>
+	<div class="w-full h-grow bg-gray-800 lg:col-span-6 xl:col-span-5">
+		<div class="p-6">
+			<h1 class="pt-4 pb-2 text-gray-100 font-bold text-2xl">
 				ORÍGENES DE LA FAMILIA SALAMANCA
 			</h1>
-			<p class="p-6 pb-2 text-gray-100 text-md">
+			<p class="py-6 pb-2 text-gray-100 text-md">
 				Los orígenes de la familia Salamanca son oscuros, muy
 				probablemente provenían de dicha provincia. Su aparición en la
 				ciudad de Burgos se sitúa en la primera mitad del siglo XV,
@@ -24,7 +20,7 @@ import mapa from "../img/mapa.jpg"
 				De igual manera, sabemos que en esos años participaban activamente
 				en las asambleas de las collaciones de la urbe.
 			</p>
-			<p class="p-6 pb-2 text-gray-100 text-md">
+			<p class="py-6 pb-2 text-gray-100 text-md">
 				El ascenso económico, social y político de los Salamanca se dio
 				en parte gracias a la exportación de sacas de lana con destino a
 				los telares flamencos (<b>Francisco</b> y <b>García</b> ya aparecen
@@ -44,12 +40,15 @@ import mapa from "../img/mapa.jpg"
 				Europa.
 			</p>
 			<img
-				class="p-6"
+				class="pt-6"
 				width="600"
 				src={mapa.src}
 				alt="Mapa del espacio comercial y financiero de los Salamanca"
 			/>
-			<p class="p-6 py-2 text-gray-100 text-md">
+			<p class="text-gray-300 text-xs pt-2 pb-6">
+				Espacio comercial y financiero de los Salamanca (1545-1574).
+			</p>
+			<p class="py-2 text-gray-100 text-md">
 				El máximo representante de la empresa en Europa fue
 				<b>Pedro de Salamanca</b>, llegando a ser consejero del rey
 				inglés y embajador de los <b>Reyes Católicos</b> en la corte de Londres.
@@ -67,7 +66,7 @@ import mapa from "../img/mapa.jpg"
 					mercaderes e hidalgos burgaleses del siglo XVI”</i
 				>, de José María González Ferrando).
 			</p>
-			<p class="p-6 pb-2 text-gray-100 text-md">
+			<p class="py-2 text-gray-100 text-md">
 				Además de las sacas de lana con destino a Flandes, Ruán y
 				Nantes, desde donde, a su vez, importaban paños y lienzos, los
 				Salamanca comenzaron a comerciar con aceites de Andalucía,
@@ -87,7 +86,7 @@ import mapa from "../img/mapa.jpg"
 				independiente, pero que actuaba en red. De ahí su éxito en los
 				negocios.
 			</p>
-			<p class="p-6 pb-2 text-gray-100 text-md">
+			<p class="py-2 text-gray-100 text-md">
 				A las actividades puramente comerciales añadieron en el siglo
 				XVI las financieras. Aunque tradicionalmente habían actuado como
 				aseguradores de cargamentos de otros mercaderes, ahora algunos
