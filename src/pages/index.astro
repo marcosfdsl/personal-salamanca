@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 import mapa from "../img/mapa.webp";
+import escudo from "../img/logoescudo.webp";
 ---
 
 <Layout>
@@ -13,9 +14,9 @@ import mapa from "../img/mapa.webp";
 			<p class="py-6 pb-2 text-gray-100 text-md">
 				Los orígenes de la familia Salamanca son oscuros, muy
 				probablemente provenían de dicha provincia y tomaron el apellido
-				Salamanca al asentarse en la ciudad de Burgos. Su aparición
-				se sitúa en la primera mitad del siglo XV, donde tenemos
-				constancia de la aparición de los hermanos
+				Salamanca al asentarse en la ciudad de Burgos. Su aparición se
+				sitúa en la primera mitad del siglo XV, donde tenemos constancia
+				de la aparición de los hermanos
 				<b>Francisco</b> y <b>García de Salamanca</b> comerciando al por
 				menor, especialmente con telas y carne, y arrendando rentas del municipio.
 				De igual manera, sabemos que en esos años participaban activamente
@@ -111,9 +112,21 @@ import mapa from "../img/mapa.webp";
 				de más de 167 millones de maravedíes) y en vendedor de juros durante
 				el reinado de <b>Felipe II</b>.
 			</p>
+			<img
+				class="pt-6"
+				width="200"
+				src={escudo.src}
+				alt="Escudo de armas de los Salamanca de Burgos"
+				title="Escudo de armas de los Salamanca de Burgos"
+			/>
+			<p class="text-gray-300 text-xs pt-2 pb-6">
+				Escudo de armas de los Salamanca originarios de Burgos.
+			</p>
+			<p class="py-2 text-gray-100 text-md">Armas: Escudo mantelado, 1º y 2º de plata, un león de azur, y mantel de sinople, una flor de lis de oro.</p>
 			<p class="text-gray-300 text-xs py-6">
 				Fuente: <a
-					href="https://dialnet.unirioja.es/servlet/articulo?codigo=6327996" title='Los Salamanca en "Comercio y hombres de negocios castellanos y navarros en
+					href="https://dialnet.unirioja.es/servlet/articulo?codigo=6327996"
+					title='Los Salamanca en "Comercio y hombres de negocios castellanos y navarros en
 					los inicios de la "Primera Edad Global"'
 					class="underline lg:hover:text-white transition ease-in-out duration-300"
 					target="_blank"
@@ -125,10 +138,10 @@ import mapa from "../img/mapa.webp";
 	</div>
 
 	<script>
-        // CANONICAL URL
-        var link = document.createElement("meta");
-        link.setAttribute("rel", "canonical");
-        link.setAttribute("href", "https://www.familiasalamanca.es");
-        document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
+		// CANONICAL URL
+		var link = document.createElement("meta");
+		link.setAttribute("rel", "canonical");
+		link.setAttribute("href", "https://www.familiasalamanca.es");
+		document.getElementsByTagName("head")[0].appendChild(link);
+	</script>
 </Layout>
