@@ -144,7 +144,7 @@ import TablaGenealogica from "../img/TablaGenealogica.webp";
                                         </p>
                                         <p class="pb-2 text-gray-100 text-md">
                                             Sigue en <a
-                                                href="/condes/" title="Condes de Fuente el Salce"
+                                                href="/condes-fuente-el-salce" title="Condes de Fuente el Salce"
                                                 class="underline"
                                                 >Condes de Fuente el Salce</a
                                             >.
@@ -682,6 +682,12 @@ import TablaGenealogica from "../img/TablaGenealogica.webp";
 			</p>
         </div>
     </div>
-</Layout>
 
-<style></style>
+    <script>
+        // CANONICAL URL
+        var link = document.createElement("meta");
+        link.setAttribute("rel", "canonical");
+        link.setAttribute("href", "https://www.familiasalamanca.es/primeros-salamanca");
+        document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+</Layout>
