@@ -4,7 +4,7 @@
 
 <div class="bg-black relative group lg:col-span-2 xl:col-span-1">
 	<div class="flex items-center cursor-pointer">
-		<h1
+		<h1 id="recargar"
 			class="text-gray-300 font-bold py-4 lg:pl-3 text-lg md:text-2xl lg:pt-5 lg:text-xl"
 		>
 			<button class="fa-solid fa-bars px-4 lg:hidden"></button>
@@ -81,4 +81,8 @@
 			element.classList.add("text-white");
 		}
 	}
+
+	document.querySelector("#recargar").addEventListener("click", function () {
+		window.location.href = "/";
+	});
 </script>
